@@ -1,0 +1,19 @@
+{
+  "name": "extra-life-chat-alerts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mustack/extra-life-chat-alerts.git"
+  },
+  "author": "Mustack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mustack/extra-life-chat-alerts/issues"
+  },
+  "homepage": "https://github.com/Mustack/extra-life-chat-alerts#readme"
+}
