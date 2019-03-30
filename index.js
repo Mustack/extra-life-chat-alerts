@@ -52,6 +52,6 @@ function onConnectedHandler (addr, port) {
   console.log(`* Connected to ${addr}:${port}`)
 
   onNewDonation('354090', donation => {
-    client.say(twitchChannel, `Thank you for your donation of ${donation.amount}, ${donation.displayName}! LET'S GO!`)
+    client.say(twitchChannel, `Thank you for your donation of $${donation.amount}, ${donation.displayName}! LET'S GO!`)
   })
 }
