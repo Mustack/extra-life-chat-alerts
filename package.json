@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Mustack/extra-life-chat-alerts/issues"
   },
-  "homepage": "https://github.com/Mustack/extra-life-chat-alerts#readme"
+  "homepage": "https://github.com/Mustack/extra-life-chat-alerts#readme",
+  "dependencies": {
+    "tmi.js": "^1.4.2"
+  }
 }
