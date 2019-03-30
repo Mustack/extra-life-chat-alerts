@@ -3,11 +3,11 @@ const tmi = require('tmi.js');
 // Define configuration options
 const opts = {
   identity: {
-    username: <BOT_USERNAME>,
-    password: <OAUTH_TOKEN>
+    username: 'brmariomarathon',
+    password: process.env.OAUTH_TOKEN
   },
   channels: [
-    <CHANNEL_NAME>
+    'brmariomarathon'
   ]
 };
 
