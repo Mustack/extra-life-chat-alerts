@@ -1,13 +1,16 @@
 const tmi = require('tmi.js')
+const { onNewDonation } = require('./extra-life')
+
+const twitchChannel = 'brmariomarathon'
 
 // Define configuration options
 const opts = {
   identity: {
-    username: 'brmariomarathon',
+    username: twitchChannel,
     password: process.env.OAUTH_TOKEN
   },
   channels: [
-    'brmariomarathon'
+    twitchChannel
   ]
 }
 
@@ -47,4 +50,8 @@ function rollDice () {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
   console.log(`* Connected to ${addr}:${port}`)
+
+  onNewDonation('354090', donation => {
+    client.say(twitchChannel, `Thank you for your donation of ${donation.amount}, ${donation.displayName}! LET'S GO!`)
+  })
 }
