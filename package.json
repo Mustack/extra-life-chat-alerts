@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Mustack/extra-life-chat-alerts#readme",
   "dependencies": {
+    "extra-life-api": "^5.2.0",
     "tmi.js": "^1.4.2"
   }
 }
